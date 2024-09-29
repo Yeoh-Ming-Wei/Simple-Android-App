@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "580706207152",
+    "firebase_url": "https://lab-week-8-39589-default-rtdb.firebaseio.com",
+    "project_id": "lab-week-8-39589",
+    "storage_bucket": "lab-week-8-39589.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580706207152:android:2457309a6243c628da4275",
+        "android_client_info": {
+          "package_name": "com.example.labweek2task2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580706207152-8b9jo0q8o0mqhgd1snmcmqnnnlb8fi4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzPzR2L5jeaFG1tMWVWsYg9QYSAT6yF8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580706207152-8b9jo0q8o0mqhgd1snmcmqnnnlb8fi4h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

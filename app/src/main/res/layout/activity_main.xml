@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/titleInput"
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/titleText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="123dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/titleInput"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/yearInput"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/yearText"
+            app:layout_constraintTop_toBottomOf="@+id/titleInput" />
+
+        <EditText
+            android:id="@+id/countryInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/countryText"
+            app:layout_constraintTop_toBottomOf="@+id/yearInput" />
+
+        <TextView
+            android:id="@+id/yearText"
+            android:layout_width="123dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:text="Year"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/yearInput"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/genreText"
+            android:layout_width="123dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:text="Genre"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/genreInput"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/keywordText"
+            android:layout_width="123dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:text="Keyword"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/keywordInput"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/countryText"
+            android:layout_width="123dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:text="Country"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/countryInput"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/genreInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/genreText"
+            app:layout_constraintTop_toBottomOf="@+id/countryInput" />
+
+        <EditText
+            android:id="@+id/costInput"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="12dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintBaseline_toBaselineOf="@+id/doubleCostButton"
+            app:layout_constraintEnd_toStartOf="@+id/doubleCostButton"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/costText" />
+
+        <TextView
+            android:id="@+id/costText"
+            android:layout_width="123dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:text="Cost"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/costInput"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/keywordInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/keywordText"
+            app:layout_constraintTop_toBottomOf="@+id/costInput" />
+
+        <Button
+            android:id="@+id/addMovieButton"
+            android:layout_width="142dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="40dp"
+            android:onClick="add"
+            android:text="Add Movie"
+            app:layout_constraintBaseline_toBaselineOf="@+id/resetButton"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="142dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:onClick="reset"
+            android:text="Reset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addMovieButton"
+            app:layout_constraintTop_toBottomOf="@+id/keywordInput" />
+
+        <Button
+            android:id="@+id/doubleCostButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="costDouble"
+            android:text="Double!"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/costInput"
+            app:layout_constraintTop_toBottomOf="@+id/genreInput" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="154dp" />
+
+        <FrameLayout
+            android:id="@+id/touchLayout"
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="#673AB7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addMovieButton" >
+
+            <TextView
+                android:id="@+id/tempView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/storeTemp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="32dp"
+            android:onClick="storeTemp"
+            android:text="Store Temp "
+            app:layout_constraintEnd_toStartOf="@+id/restore"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/touchLayout" />
+
+        <Button
+            android:id="@+id/restore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="restore"
+            android:text="Restore"
+            app:layout_constraintBaseline_toBaselineOf="@+id/storeTemp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/storeTemp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
